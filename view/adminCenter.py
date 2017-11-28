@@ -57,6 +57,7 @@ class LocalInfo:
 
     def manu(self):
         info = dmidecode.system()
+        
         if len(info) > 0 :
             for i in info :
                 try:
