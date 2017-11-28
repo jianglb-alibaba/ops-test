@@ -3,8 +3,6 @@
 from main import *
 
 
-
-
 # 获取适配log的select选项菜单值
 def getOptions():
     try:
@@ -36,7 +34,7 @@ class Index:
             web.setcookie('HTTP_REFERER', web.ctx.fullpath, 86400)
             return web.seeother("/login")
 
-
+'''
 # 显示日志详情
 class Detail:
     def GET(self):
@@ -56,3 +54,4 @@ class Edit:
     def GET(self):
 
     def POST(self):
+'''
