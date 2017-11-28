@@ -35,5 +35,5 @@ urls = (
         #'/report/wiki',              'view.report.Wiki',
         #'/report/norm',              'view.report.Norm',
         '/test',                     'view.index.Test',
-        '/log/index',                'view.log.index',
+        '/log/index',                'view.log.Index',
 )
