@@ -29,7 +29,7 @@ class Index:
                      ''')
             except:
                 return "服务器(数据库)错误"
-            return render.log(ShowName=ShowName, uid=SID, getMachine=getMachine, machineShow=getOptions())
+            return render.container(ShowName=ShowName, uid=SID, getMachine=getMachine, machineShow=getOptions())
         else:
             web.setcookie('HTTP_REFERER', web.ctx.fullpath, 86400)
             return web.seeother("/login")
