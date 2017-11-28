@@ -1,0 +1,150 @@
+119.130.228.197:55427 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /monitor/traffic" - 200 OK
+119.130.228.197:55427 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/css/main.css" - 304 Not Modified
+119.130.228.197:55555 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/css/custom.css" - 304 Not Modified
+119.130.228.197:55618 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/jquery-1.8.3.min.js" - 304 Not Modified
+119.130.228.197:55809 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/jquery.superfish.min.js" - 304 Not Modified
+119.130.228.197:55755 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/nav.show.menu.js" - 304 Not Modified
+119.130.228.197:55873 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/highcharts/highcharts.js" - 304 Not Modified
+119.130.228.197:55427 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/jquery.supersubs.min.js" - 304 Not Modified
+119.130.228.197:55555 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/js/administry.js" - 304 Not Modified
+119.130.228.197:55873 - - [15/Nov/2017 08:56:04] "HTTP/1.1 GET /static/images/logo.png" - 304 Not Modified
+119.130.228.197:55755 - - [15/Nov/2017 08:56:05] "HTTP/1.1 GET /static/images/user_32.png" - 304 Not Modified
+119.130.228.197:55755 - - [15/Nov/2017 08:56:08] "HTTP/1.1 GET /monitor/redis" - 200 OK
+119.130.228.197:55755 - - [15/Nov/2017 08:56:08] "HTTP/1.1 GET /static/js/highcharts/modules/exporting.js" - 304 Not Modified
+119.130.228.197:55755 - - [15/Nov/2017 08:56:10] "HTTP/1.1 GET /log/system" - 404 Not Found
+119.130.228.197:55755 - - [15/Nov/2017 08:56:10] "HTTP/1.1 GET /static/images/ops_circle_qrcode.jpg" - 304 Not Modified
+119.130.228.197:55877 - - [15/Nov/2017 08:56:11] "HTTP/1.1 GET /log/system" - 404 Not Found
+119.130.228.197:55755 - - [15/Nov/2017 08:56:12] "HTTP/1.1 GET /salt/status" - 200 OK
+119.130.228.197:55873 - - [15/Nov/2017 08:56:12] "HTTP/1.1 GET /static/css/tables.css" - 304 Not Modified
+119.130.228.197:55755 - - [15/Nov/2017 08:56:12] "HTTP/1.1 GET /static/js/salt.js" - 200 
+119.130.228.197:55555 - - [15/Nov/2017 08:56:12] "HTTP/1.1 GET /static/images/loading1.gif" - 200 
+119.130.228.197:55555 - - [15/Nov/2017 08:56:12] "HTTP/1.1 GET /static/images/refresh.png" - 200 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process
+    return self.handle()
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+    return self._delegate(fn, self.fvars, args)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate
+    return handle_class(cls)
+  File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class
+    return tocall(*args)
+  File "/home/SaltAdmin-jianglb/view/main.py", line 27, in inner
+    return func(*args)
+  File "/home/SaltAdmin-jianglb/view/saltAdmin.py", line 18, in POST
+    local = salt.client.LocalClient()
+AttributeError: 'module' object has no attribute 'client'
+
+119.130.228.197:55555 - - [15/Nov/2017 08:56:13] "HTTP/1.1 POST /salt/status" - 500 Internal Server Error
+101.226.33.218:40527 - - [15/Nov/2017 08:56:20] "HTTP/1.1 GET /log/system" - 404 Not Found
+101.226.33.218:40527 - - [15/Nov/2017 08:56:20] "HTTP/1.1 GET /static/js/jquery-1.8.3.min.js" - 200 
+101.226.225.85:53544 - - [15/Nov/2017 08:56:22] "HTTP/1.1 GET /salt/status" - 303 See Other
+101.226.225.85:53544 - - [15/Nov/2017 08:56:22] "HTTP/1.1 GET /login" - 200 OK
+101.226.225.85:53544 - - [15/Nov/2017 08:56:23] "HTTP/1.1 GET /static/js/jquery-1.8.3.min.js" - 200 
+139.162.111.98:44822 - - [15/Nov/2017 09:44:41] "HTTP/1.1 GET /" - 200 OK
+46.17.46.77:43940 - - [15/Nov/2017 11:58:43] "HTTP/1.1 GET /a2billing/admin/Public/index.php" - 404 Not Found
+80.82.78.50:42982 - - [15/Nov/2017 12:37:04] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+123.151.42.61:57742 - - [15/Nov/2017 21:16:13] "HTTP/1.1 GET " - 404 Not Found
+93.174.93.136:37071 - - [16/Nov/2017 05:22:29] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+80.82.78.50:58981 - - [16/Nov/2017 10:57:39] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+119.249.54.139:4417 - - [16/Nov/2017 12:46:12] "HTTP/1.1 GET /invoker/JMXInvokerServlet" - 404 Not Found
+52.232.248.208:54050 - - [16/Nov/2017 17:31:54] "HTTP/1.1 GET /manager/html" - 404 Not Found
+93.56.33.10:33452 - - [16/Nov/2017 19:11:19] "HTTP/1.1 GET /" - 200 OK
+47.203.90.205:45680 - - [17/Nov/2017 01:53:23] "HTTP/1.1 GET " - 404 Not Found
+120.132.19.52:55630 - - [17/Nov/2017 03:26:02] "HTTP/1.1 GET 404/search_children.js" - 404 Not Found
+93.174.93.136:52764 - - [17/Nov/2017 04:14:45] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+123.59.56.127:50038 - - [17/Nov/2017 07:03:21] "HTTP/1.1 GET /" - 200 OK
+80.82.78.50:43148 - - [17/Nov/2017 09:24:56] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+54.191.54.243:40508 - - [17/Nov/2017 10:22:01] "HTTP/1.1 GET /" - 200 OK
+104.37.214.161:3189 - - [17/Nov/2017 12:29:21] "HTTP/1.1 GET /manager/html" - 404 Not Found
+93.174.93.136:60035 - - [17/Nov/2017 15:04:58] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+218.28.0.150:49747 - - [17/Nov/2017 17:13:23] "HTTP/1.1 GET /manager/html" - 404 Not Found
+172.82.166.210:35278 - - [17/Nov/2017 17:38:09] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+104.37.214.161:4341 - - [17/Nov/2017 23:03:49] "HTTP/1.1 GET /manager/html" - 404 Not Found
+37.9.56.119:60000 - - [18/Nov/2017 00:36:31] "HTTP/1.1 GET /" - 200 OK
+123.151.42.61:32128 - - [18/Nov/2017 01:53:32] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:57] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:57] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:57] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:57] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:58] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:58] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:58] "HTTP/1.1 GET " - 404 Not Found
+221.13.12.129:51104 - - [18/Nov/2017 07:13:58] "HTTP/1.1 GET " - 404 Not Found
+80.82.78.50:44947 - - [18/Nov/2017 08:04:19] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+47.203.91.115:53600 - - [18/Nov/2017 08:06:34] "HTTP/1.1 GET " - 404 Not Found
+141.212.122.96:41053 - - [18/Nov/2017 10:49:14] "HTTP/1.1 GET /" - 200 OK
+119.131.76.231:42563 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /" - 200 OK
+119.131.76.231:42632 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/css/login.css" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/js/jquery-1.8.3.min.js" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/bg.jpg" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/form-bg.png" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/username-field.png" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/password-field.png" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/checkbox-off.png" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /static/images/login/footer-bg.png" - 200 
+119.131.76.231:42882 - - [18/Nov/2017 12:00:23] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+119.131.76.231:43011 - - [18/Nov/2017 12:00:26] "HTTP/1.1 GET /static/images/login/password-field-hover.png" - 200 
+119.131.76.231:43074 - - [18/Nov/2017 12:00:26] "HTTP/1.1 GET /static/images/login/go-hover.png" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:27] "HTTP/1.1 GET /static/images/login/username-field-hover.png" - 200 
+0.03 (1): select u.id,u.username,u.password,u.nickname,u.status,L.ip,L.location,L.date from users as u left join login_logs as L on u.loginfo=L.id where username="admin" and password=md5("admin")
+0.0 (2): insert into login_logs (uid,ip,location,agent,token,expiry) values ("1","119.131.76.231","广东广州 []","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393","VLS9t2SuHhVzn4vxas2t6pavSAQVJhaq",NOW() + INTERVAL 0 SECOND)
+0.0 (3): update users set loginfo=(select id from login_logs where uid="1" and ip="119.131.76.231" and token="VLS9t2SuHhVzn4vxas2t6pavSAQVJhaq" and  status="yes" order by id desc limit 1) where id="1"
+119.131.76.231:42632 - - [18/Nov/2017 12:00:30] "HTTP/1.1 POST /login" - 200 OK
+Failed to setup thread-interrupt handler. This is usually not critical
+119.131.76.231:42632 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /dashboard" - 200 OK
+119.131.76.231:42563 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/css/style.css" - 200 
+119.131.76.231:43074 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.ui.widget.min.js" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/swfobject.js" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/css/custom.css" - 200 
+119.131.76.231:43011 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.ui.core.min.js" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.ui.tabs.min.js" - 200 
+119.131.76.231:43074 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.superfish.min.js" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.tipTip.min.js" - 200 
+119.131.76.231:43011 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.validate_pack.js" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.supersubs.min.js" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/jquery.nyroModal.pack.js" - 200 
+119.131.76.231:43074 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/flot/jquery.flot.min.js" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/dashboard.js" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/js/administry.js" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/logo.png" - 200 
+119.131.76.231:42632 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/user_32.png" - 200 
+119.131.76.231:43011 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/information.png" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/key.png" - 200 
+119.131.76.231:42821 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/favicons/favicon.png" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/search.gif" - 200 119.131.76.231:43074 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/arrows-ffffff.png" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:31] "HTTP/1.1 GET /static/images/shadow.png" - 200 
+
+119.131.76.231:43011 - - [18/Nov/2017 12:00:32] "HTTP/1.1 GET /dashboard/IndexData" - 200 OK
+0.0 (1): 
+                                    select h.id,hostname,priip1,pubip1,h.type,h.status,
+                                    op1.value as mem,
+                                    op2.value as hdd,
+                                    op3.value as os,
+                                    op4.value as idc,
+                                    op5.value as role,
+                                    op6.value as model,
+                                    op7.value as idctag,
+                                    u1.nickname as creator,
+                                    u2.nickname as editor,
+                                    h.mdate
+                                    from hosts as h
+                                    left join options as op1 on h.mem=op1.id
+                                    left join options as op2 on h.hdd=op2.id
+                                    left join options as op3 on h.os=op3.id
+                                    left join options as op4 on h.idc=op4.id
+                                    left join options as op5 on h.role=op5.id
+                                    left join options as op6 on h.model=op6.id
+                                    left join options as op7 on h.idctag=op7.id
+                                    left join users as u1 on h.creator=u1.id
+                                    left join users as u2 on h.editor=u2.id
+                                    
+0.0 (2): select * from options where type in ("role","os","cpu","hdd","mem","model","idc","idctag") and status="yes" order by type,value
+119.131.76.231:43011 - - [18/Nov/2017 12:00:33] "HTTP/1.1 GET /hosts" - 200 OK
+119.131.76.231:42632 - - [18/Nov/2017 12:00:33] "HTTP/1.1 GET /static/css/tables.css" - 200 
+119.131.76.231:43143 - - [18/Nov/2017 12:00:33] "HTTP/1.1 GET /static/css/main.css" - 200 
+119.131.76.231:42563 - - [18/Nov/2017 12:00:33] "HTTP/1.1 GET /static/js/hosts.js" - 200 
+119.131.76.231:42950 - - [18/Nov/2017 12:00:33] "HTTP/1.1 GET /static/js/nav.show.menu.js" - 200 
+119.131.76.231:43074 - - [18/Nov/2017 12:00:34] "HTTP/1.1 GET /static/images/add.png" - 200 
+119.131.76.231:43011 - - [18/Nov/2017 12:00:34] "HTTP/1.1 GET /static/images/btn-overlay.png" - 200 
+93.174.93.136:52027 - - [18/Nov/2017 13:12:57] "HTTP/1.1 GET cache/global/img/gs.gif" - 404 Not Found
+158.85.81.126:6666 - - [18/Nov/2017 13:19:00] "HTTP/1.1 GET /" - 200 OK
