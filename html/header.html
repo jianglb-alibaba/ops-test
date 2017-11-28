@@ -24,79 +24,179 @@ def curMenu(curM,curName):
 %>
 <nav id="menu">	
     <ul class="sf-menu">
-        <li ${curMenu(curM,'dashboard')}><a href="/dashboard">控制中心</a></li>
-        <li ${curMenu(curM,'hosts')}><a href="/hosts">主机</a>
+        <li ${curMenu(curM,'dashboard')}><a href="/dashboard">控制栏</a></li>
+        <li ${curMenu(curM,'#')}><a href="/hosts">配置管理</a>
+        <!--<li ${curMenu(curM,'hosts')}><a href="/hosts">主机</a> -->
             <ul>
-                <li class="secondMenu"><a href="/hosts">主机管理</a></li>
-                <li class="secondMenu"><a href="/hosts/add">添加主机</a></li>
-	              <li class="secondMenu"><a href="/hosts/redis">Redis管理</a>
+                  <li class="secondMenu"><a href="/hosts/redis">使用说明</a>
+	                 <ul>
+	                    <li><a href="/hosts/redis">Redis实例管理</a></li>
+	                 </ul>
+	              </li>
+                  <li class="secondMenu"><a href="/hosts/redis">定义概念模型</a>
 	                 <ul>
 	                    <li><a href="/hosts/redis">Redis实例管理</a></li>
 	                    <li><a href="/hosts/redis/add">添加Redis实例</a></li>
 	                 </ul>
 	              </li>
-		            <li class="secondMenu"><a href="/hosts/mysql">MySQL管理</a>
+                  <li class="secondMenu"><a href="/hosts/redis">CI构造</a>
+	                 <ul>
+	                    <li><a href="/hosts/redis">基础设施资源</a></li>
+	                    <li><a href="/hosts/redis/add">Paas资源</a></li>
+                         <li><a href="/hosts/redis/add">应用层资源</a></li>
+                         <li><a href="/hosts/redis/add">申请资源</a></li>
+	                 </ul>
+	              </li>
+	              <li class="secondMenu"><a href="/hosts/redis">CI拓扑</a>
+	                 <ul>
+	                    <li><a href="/hosts/redis">Redis实例管理</a></li>
+	                    <li><a href="/hosts/redis/add">添加Redis实例</a></li>
+                        <li class="secondMenu"><a href="/hosts/redis">Redis管理</a>
+	                      <ul>
+	                        <li><a href="/hosts/redis">Redis实例管理</a></li>
+	                        <li><a href="/hosts/redis/add">添加Redis实例</a></li>
+	                     </ul>
+                        </li>
+                     </ul>
+	               </li>
+                  <li class="secondMenu"><a href="/hosts/mysql">MySQL管理</a>
 	                 <ul>
 	                    <li><a href="/hosts/mysql">MySQL实例管理</a></li>
 	                    <li><a href="/hosts/mysql/add">添加MySQL实例</a></li>
 	                 </ul>
-	              </li> 
+	              </li>
+
+                  <li class="secondMenu"><a href="/hosts/mysql">CMDB变更审计</a>
+	                 <ul>
+	                    <li><a href="/hosts/mysql">CMDB变更</a></li>
+	                    <li><a href="/hosts/mysql/add">CMDB审计</a></li>
+	                 </ul>
+	              </li>
+                  <li class="secondMenu"><a href="/hosts/mysql">最新变动</a>
+	                 <ul>
+	                    <li><a href="/hosts/mysql">CI单体</a></li>
+	                    <li><a href="/hosts/mysql/add">CI关系</a></li>
+	                 </ul>
+	              </li>
+                  <li class="secondMenu"><a href="#">IT病例库</a>
+	                 <ul>
+	                    <li><a href="/hosts/docker">最新病例</a></li>
+	                 </ul>
+	              </li>
             </ul>
-        </li> 
-        <li ${curMenu(curM,'project')}><a href="/project">项目</a>
+        </li>
+        <li ${curMenu(curM,'#')}><a href="/hosts">资产管理</a>
+        <!--<li ${curMenu(curM,'hosts')}><a href="/hosts">主机</a> -->
             <ul>
-                <li><a href="/project">项目管理</a></li>
-                <li><a href="/project/add">添加项目</a></li>
+                  <li ${curMenu(curM,'hosts')}><a href="/hosts">设备</a>
+                	  <ul>
+                         <li class="secondMenu"><a href="/hosts">设备管理</a></li>
+                         <li class="secondMenu"><a href="/hosts/add">添加设备</a></li>
+	                 </ul>
+                  </li>
+
             </ul>
-		    </li>		
-        <li ${curMenu(curM,'users')}><a href="/users">用户</a>
+        </li>
+        <li ${curMenu(curM,'project')}><a href="/project">项目管理</a>
             <ul>
-                <li><a href="/users">用户管理</a></li>
-                <li><a href="/users/add">添加用户</a></li>
+                <li><a href="/project">申请项目</a></li>
+                <li><a href="/project">项目信息</a></li>
+                <li><a href="/project/add">项目成员</a></li>
+                <li><a href="/project/add">项目合同</a></li>
+                <li><a href="/project/add">项目文档</a></li>
+            </ul>
+        </li>
+
+
+        <li  ${curMenu(curM,'monitor')}><a href="/monitor/redis">在线监控</a>
+            <ul>
+                <li><a href="/monitor/redis">快速定位监控</a></li>
+                <li><a href="/monitor/redis">数据库监控</a></li>
+                <li><a href="/monitor/mysql">集群监控</a></li>
+                <li><a href="/monitor/traffic">服务器监控</a></li>
+                <li><a href="/monitor/traffic">网络监控</a></li>
+                <li><a href="/monitor/traffic">其他监控</a></li>
+                <li><a href="/monitor/traffic">日志内容</a>
+                  <ul>
+                     <li><a href="/log/container">容器日志</a></li>
+                     <li><a href="/log/system">系统日志</a></li>
+                    <li><a href="/log/application">应用日志</a></li>
+                    <li><a href="/log/webservice">接口日志</a></li>
+                    <li><a href="/log/others">其他日志</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li ${curMenu(curM,'salt')}><a href="/salt">变更管理</a>
+            <ul>
+                <li><a href="/salt/admin">快速申请变更</a></li>
+                <li><a href="/salt/status">变更清单</a></li>
+                <li><a href="/salt/cmd">变更审核</a></li>
+                <li><a href="/salt/config">变更配置管理</a>
+                   <ul>
+                      <li><a href="/salt/admin">定义变更模板</a></li>
+                      <li><a href="/salt/admin">定义审批流程</a></li>
+                       <li><a href="/salt/admin">定义变更报表</a></li>
+                   </ul>
+                </li>
+                <li><a href="/salt/config">变更报表</a></li>
+                <li><a href="/salt/key">实时变更流程</a></li>
+                <!--<li><a href="/salt/file">文件分发</a></li>
+                <li><a href="/salt/release">发布管理</a></li> -->
+            </ul>
+        </li>
+
+        <li ${curMenu(curM,'report')}><a href="/report/fault">工单管理</a>
+            <ul>
+                <li><a href="/report/fault">快速发起工单</a></li>
+                <li><a href="/report/fault">事件工单</a></li>
+                <li><a href="/report/topo">问题工单</a></li>
+                <li><a href="/report/wiki">变更工单</a></li>
+                <li><a href="/report/norm">文档积累</a></li>
+            </ul>
+        </li>
+        <li ${curMenu(curM,'report')}><a href="/report/fault">服务管理</a>
+            <ul>
+                <li><a href="/report/fault">快速申请服务</a></li>
+                <li><a href="/report/fault">合同管理</a></li>
+                <li><a href="/report/topo">供应商管理</a></li>
+                <li><a href="/report/wiki">业务与服务</a></li>
+                <li><a href="/report/norm">服务报告</a></li>
+                <li><a href="/salt/config">服务配置管理</a>
+                    <ul>
+                      <li><a href="/salt/admin">定义服务模板</a></li>
+                      <li><a href="/salt/admin">定义服务流程</a></li>
+                       <li><a href="/salt/admin">定义服务</a></li>
+                      <li><a href="/salt/admin">定义服务报告模板</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </li>
+        <li ${curMenu(curM,'report')}><a href="/report/fault">维基</a>
+            <ul>
+                <li><a href="/report/fault">月报</a></li>
+                <li><a href="/report/topo">季报</a></li>
+                <li><a href="/report/wiki">年报</a></li>
+                <li><a href="/report/norm">知识库</a></li>
             </ul>
         </li>
         <li ${curMenu(curM,'admin')}><a href="/admin/config">管理</a>
             <ul>
                 <li><a href="/admin/system">系统管理</a></li>
                 <li><a href="/admin/options">选项管理</a></li>
-                <li><a href="/hosts">资产管理</a></li>
-            </ul>
-        </li>
-        <li  ${curMenu(curM,'monitor')}><a href="/monitor/redis">监控</a>
-            <ul>
-                <li><a href="/monitor/redis">Redis监控</a></li>
-                <li><a href="/monitor/mysql">MySQL监控</a></li>
-                <li><a href="/monitor/traffic">网络流量</a></li>
-                <li><a href="#">Zabbix API</a></li>
-            </ul>
-        </li>
-        <li ${curMenu(curM,'salt')}><a href="/salt">SaltStack</a>
-            <ul>
-                <li><a href="/salt/admin">主机管理</a>
+               <!-- <li><a href="/hosts">资产管理</a></li> -->
+                <li ${curMenu(curM,'users')}><a href="/users">用户</a>
                     <ul>
-                        <li><a href="/salt/service">服务管理</a></li>
-                        <li><a href="/salt/user">用户管理</a></li>
-                        <li><a href="/salt/pkg">软件管理</a></li>
-                        <li><a href="/salt/system">系统管理</a></li>
+                       <li><a href="/users">用户管理</a></li>
+                       <li><a href="/users/add">添加用户</a></li>
                     </ul>
                 </li>
-                <li><a href="/salt/status">实时状态</a></li>
-                <li><a href="/salt/cmd">命令下发</a></li>
-                <li><a href="/salt/config">配置管理</a></li>
-                <li><a href="/salt/key">认证管理</a></li>
-                <li><a href="/salt/file">文件分发</a></li>
-                <li><a href="/salt/release">发布管理</a></li>
             </ul>
+
         </li>
-        <li ${curMenu(curM,'report')}><a href="/report/fault">报告</a>
-            <ul>
-                <li><a href="/report/fault">故障上报</a></li>
-                <li><a href="/report/topo">拓扑文档</a></li>
-                <li><a href="/report/wiki">项目维基</a></li>
-                <li><a href="/report/norm">规范文档</a></li>      
-            </ul>
-        </li>
-        <li ${curMenu(curM,'cloud')}><a href="#">企业云</a></li>
+
+        <!--<li ${curMenu(curM,'cloud')}><a href="#">企业云</a></li> -->
         <!--<li ${curMenu(curM,'test')}><a href="/test">测试页面</a></li>-->
     </ul>
 </nav>
