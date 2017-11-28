@@ -34,6 +34,6 @@ urls = (
         #'/report/topo',              'view.report.Topo',
         #'/report/wiki',              'view.report.Wiki',
         #'/report/norm',              'view.report.Norm',
-        '/test',                     'view.index.Test',
-        '/log/index/?',                'view.log.Index',
+        #'/test',                     'view.index.Test',
+        '/monitor/index',                'view.monitor.Index',
 )

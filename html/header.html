@@ -25,7 +25,7 @@ def curMenu(curM,curName):
 <nav id="menu">	
     <ul class="sf-menu">
         <li ${curMenu(curM,'dashboard')}><a href="/dashboard">控制栏</a></li>
-        <li ${curMenu(curM,'#')}><a href="/hosts">配置管理</a>
+        <li ${curMenu(curM,'cmdb')}><a href="/hosts">配置管理</a>
         <!--<li ${curMenu(curM,'hosts')}><a href="/hosts">主机</a> -->
             <ul>
                   <li class="secondMenu"><a href="/hosts/redis">使用说明</a>
@@ -85,7 +85,7 @@ def curMenu(curM,curName):
 	              </li>
             </ul>
         </li>
-        <li ${curMenu(curM,'#')}><a href="/hosts">资产管理</a>
+        <li ${curMenu(curM,'hosts')}><a href="/hosts">资产管理</a>
         <!--<li ${curMenu(curM,'hosts')}><a href="/hosts">主机</a> -->
             <ul>
                   <li ${curMenu(curM,'hosts')}><a href="/hosts">设备</a>
@@ -110,13 +110,13 @@ def curMenu(curM,curName):
 
         <li  ${curMenu(curM,'monitor')}><a href="/monitor/redis">在线监控</a>
             <ul>
-                <li><a href="/monitor/redis">快速定位监控</a></li>
-                <li><a href="/monitor/redis">数据库监控</a></li>
-                <li><a href="/monitor/mysql">集群监控</a></li>
-                <li><a href="/monitor/traffic">服务器监控</a></li>
-                <li><a href="/monitor/traffic">网络监控</a></li>
+                <li><a href="/monitor/quick">快速定位监控</a></li>
+                <li><a href="/monitor/db">数据库监控</a></li>
+                <li><a href="/monitor/ha">集群监控</a></li>
+                <li><a href="/monitor/server">服务器监控</a></li>
+                <li><a href="/monitor/network">网络监控</a></li>
                 <li><a href="/monitor/traffic">其他监控</a></li>
-                <li><a href="/log/index">日志管理</a>
+                <li><a href="/monitor/index">日志管理</a>
                 <!--  <ul>
                      <li><a href="/log/container">容器日志</a></li>
                      <li><a href="/log/system">系统日志</a></li>
@@ -147,7 +147,7 @@ def curMenu(curM,curName):
             </ul>
         </li>
 
-        <li ${curMenu(curM,'report')}><a href="/report/fault">工单管理</a>
+        <li ${curMenu(curM,'order')}><a href="/report/fault">工单管理</a>
             <ul>
                 <li><a href="/report/fault">快速发起工单</a></li>
                 <li><a href="/report/fault">事件工单</a></li>
@@ -156,7 +156,7 @@ def curMenu(curM,curName):
                 <li><a href="/report/norm">文档积累</a></li>
             </ul>
         </li>
-        <li ${curMenu(curM,'report')}><a href="/report/fault">服务管理</a>
+        <li ${curMenu(curM,'services')}><a href="/report/fault">服务管理</a>
             <ul>
                 <li><a href="/report/fault">快速申请服务</a></li>
                 <li><a href="/report/fault">合同管理</a></li>
@@ -173,7 +173,7 @@ def curMenu(curM,curName):
                 </li>
             </ul>
         </li>
-        <li ${curMenu(curM,'report')}><a href="/report/fault">维基</a>
+        <li ${curMenu(curM,'wiki')}><a href="/report/fault">维基</a>
             <ul>
                 <li><a href="/report/fault">月报</a></li>
                 <li><a href="/report/topo">季报</a></li>
